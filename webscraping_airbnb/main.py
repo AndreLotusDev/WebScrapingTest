@@ -3,17 +3,22 @@ from bs4 import BeautifulSoup
 import pandas as pd
 import os
 import datetime
-import re
 import spacy
-from price_parser import Price
+from grid_extraction_logic import GridExtractionLogic
+from random import uniform
+import time
 
 nlp = spacy.load("pt_core_news_sm")
+
+headers = {
+    "User-Agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/91.0.4472.124 Safari/537.36"
+}
 
 # this code works in 10 - 29 - 2013
 def generate_text(text_to_generate):
     actual_only_date_datetime = datetime.datetime.now()
     #replace : to _ in date
-    actual_only_date_datetime = str(actual_only_date_datetime).replace(':', '_')
+    actual_only_date_datetime = str(actual_only_date_datetime).replace(':', '_').replace('-', "_")
     actual_dir = os.getcwd()
     file_path = actual_dir + '/soup_' + actual_only_date_datetime + '.html'
     with open(file_path, 'w', encoding='utf-8') as file:
@@ -38,59 +43,48 @@ URL_BASE_FOR_SEARCH = 'https://www.airbnb.com.br/s/Matinhos-~-PR/homes?tab_id=ho
 page = requests.get(URL_BASE_FOR_SEARCH)
 soup = BeautifulSoup(page.text, 'html.parser')
 
-#get by aria-label="Paginação de resultados de busca"
 pagination = soup.find('nav', attrs={'aria-label': 'Paginação de resultados de busca'})
 
-#get first a inside pagination
-first_a = pagination.find('a')
-href_value = first_a['href']
+next_button = pagination.find('a', attrs={'aria-label': 'Próximo'})
+href_value = next_button['href']
+requests_made = 0
 
-#get divs with usefull info
-grid = soup.findAll(filter_func)
+all_grids = []
 
-for card in grid:
+while href_value != None or href_value != '' :
+    sleep_duration = uniform(1, 2)
+    time.sleep(sleep_duration)
+    print('requests made' + str(requests_made))
+    page = requests.get(URL_BASE + href_value)
+    soup = BeautifulSoup(page.text, 'html.parser')
 
-    link_to_new_page = card.find('a')
-    link_to_new_page_href = link_to_new_page['href']
-    pure_image = card.find('img')['src']
-    children_div = ''
+    pagination = soup.find('nav', attrs={'aria-label': 'Paginação de resultados de busca'})
 
-    first_div = card.find('div')
-    ZERO_VALUE = 0
-    actual_value = 0
-    for child in first_div.children:
-        if actual_value == 1:
-            actual_value = ZERO_VALUE
-            children_div = child
-        actual_value += 1
+    next_button = pagination.find('a', {'aria-label': 'Próximo'})
+    if(next_button == None):
+        break
 
-    title = children_div.find_all('div')[0].text
-    description = children_div.find_all('div')[1].text
-    beds = children_div.find_all('div')[2].text
-    date = children_div.find_all('div')[3].text
+    href_value = next_button['href']
+    print(href_value)
+    requests_made += 1
 
-    pricing = children_div.find_all('div')[4].find('span').find('div').text
-    numbers = re.findall(r'(\d+\.\d+|\d+)', pricing)
-    result_pricing = Price.fromstring(pricing)
-    currency = result_pricing.currency
-    rating = 0
-    num_ratings = 0
+    temp_grid = soup.findAll(filter_func)
+    all_grids.append(temp_grid)
 
-    for each_line_of_desc in children_div.children:
-        if each_line_of_desc.name == 'span':
-            text = "4,98 (45)"
-            pattern = r'(\d+,?\d*) \((\d+)\)'
+do_one_time = False
+qtd = 0
 
-            match = re.search(pattern, text)
-            rating = match.group(1)
-            num_ratings = match.group(2)
+data_array = []
 
-    #WIP
-    # doc = nlp(pricing)
-    # print(doc.ents)
-    # for ent in doc.ents:
-    #     if ent.label_ == "MONEY":
-    #         currency = ent.text
+for _temp_grid in all_grids:
+    GridExtractionLogic.Run(_temp_grid, do_one_time, qtd, data_array, URL_BASE, headers)
 
-next_page = URL_BASE + href_value
+df_to_export = pd.DataFrame(data_array)
+
+actual_directory = os.getcwd()
+actual_only_date_datetime = datetime.datetime.now()
+actual_only_date_datetime = str(actual_only_date_datetime).replace(':', '_').replace('-', "_")
+with pd.ExcelWriter(actual_directory + "\\" + actual_only_date_datetime + ".xlsx", engine='openpyxl') as writer:
+    df_to_export.to_excel(writer, sheet_name='main', index=False)
+
 
