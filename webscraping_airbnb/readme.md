@@ -1,0 +1,4 @@
+Please run this command after everything
+
+python -m spacy download en_core_web_sm
+python -m spacy download pt_core_news_sm
