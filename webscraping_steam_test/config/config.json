@@ -1,0 +1,59 @@
+{
+    "url": "https://store.steampowered.com/specials",
+    "container": {
+        "name": "store_sales_divs",
+        "selector": "div[class*=\"salepreviewwidgets_StoreSaleWidgetContainer\"]",
+        "match": "all",
+        "type": "node"
+    },
+    "item": [
+        {
+            "name": "title",
+            "selector": "[class^=\"salepreviewwidgets_StoreSaleWidgetTitle\"]",
+            "match": "first",
+            "type": "text"
+        },
+        {
+            "name": "thumbnail",
+            "selector": "img[class*=\"CapsuleImage\"]",
+            "match": "first",
+            "type": "node"
+        },
+        {
+            "name": "tags",
+            "selector": "[class^=\"salepreviewwidgets_StoreSaleWidgetTags\"] > a",
+            "match": "all",
+            "type": "text"
+        },
+        {
+            "name": "release_date",
+            "selector": "[class*=\"salepreviewwidgets_WidgetReleaseDateAndPlatformCtn\"] > div[class*=\"StoreSaleWidgetRelease\"]",
+            "match": "first",
+            "type": "text"
+        },
+        {
+            "name": "reviewed_by",
+            "selector": "[class*=\"ReviewScoreCount\"]",
+            "match": "first",
+            "type": "text"
+        },
+        {
+            "name": "review_score",
+            "selector": "[class*=\"ReviewScoreValue\"] > div",
+            "match": "first",
+            "type": "text"
+        },
+        {
+            "name": "sale_price",
+            "selector": "[class*=\"salepreviewwidgets_StoreSalePriceBox\"]",
+            "match": "first",
+            "type": "text"
+        },
+        {
+            "name": "normal_price",
+            "selector": "[class*=\"salepreviewwidgets_StoreOriginalPrice\"]",
+            "match": "first",
+            "type": "text"
+        }
+    ]
+}
