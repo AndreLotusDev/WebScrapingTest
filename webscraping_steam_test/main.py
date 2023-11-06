@@ -27,13 +27,17 @@ if __name__ == '__main__':
         for d in divs:
             title = d.css_first('[class^="salepreviewwidgets_StoreSaleWidgetTitle"]').text()
             thumbnail = d.css_first('img[class^="salepreviewwidgets_CapsuleImage"]').attributes['src']
+            tags = d.css('[class^="salepreviewwidgets_StoreSaleWidgetTags"] > a')
+            tags_only_text = [t.text() for t in tags]
 
             print(title)
             print(thumbnail)
+            print(tags_only_text)
 
             attrs = {
                 'title': title,
-                'thumbnail': thumbnail
+                'thumbnail': thumbnail,
+                'tags': tags_only_text
             }
 
         browser.close()
