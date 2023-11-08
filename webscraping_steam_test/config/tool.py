@@ -57,6 +57,12 @@ _config = {
             "selector": '[class*="salepreviewwidgets_StoreOriginalPrice"]',
             "match": "first",
             "type": "text"
+        },
+        {
+            "name": "price_currency",
+            "selector": 'div[class*="StoreSalePriceBox"]',
+            "match": "first",
+            "type": "text"
         }
     ]
 }
