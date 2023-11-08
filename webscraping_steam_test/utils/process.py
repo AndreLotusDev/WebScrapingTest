@@ -67,6 +67,7 @@ def format_and_transform(attrs: dict):
         if k in attrs:
             attrs[k] = v(attrs[k])
 
+    attrs["discount"] = round((attrs["normal_price"] - attrs["sale_price"]) / attrs["normal_price"] * 100, 2)
 
     return attrs
 
