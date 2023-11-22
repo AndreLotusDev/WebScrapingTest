@@ -2,6 +2,23 @@ import scrapy
 from itemloaders.processors import MapCompose, TakeFirst, Join
 from w3lib.html import remove_tags
 
+def remove_commas(value):
+    return value.replace(",", "")
+
+def try_float(value):
+    try:
+        return float(value)
+    except ValueError:
+        return None
+
+def try_int(value):
+    try:
+        return int(value)
+    except ValueError:
+        return None
+
+def extract_year(value):
+    return value[-4:]
 
 class CountriesGdpItem(scrapy.Item):
     country_name = scrapy.Field(
@@ -13,11 +30,11 @@ class CountriesGdpItem(scrapy.Item):
         output_processor=TakeFirst()
     )
     gdp = scrapy.Field(
-        input_processor=MapCompose(remove_tags, str.split),
+        input_processor=MapCompose(remove_tags, str.split, remove_commas, try_float),
         output_processor=TakeFirst()
     )
     year = scrapy.Field(
-        input_processor=MapCompose(remove_tags, str.split),
+        input_processor=MapCompose(remove_tags, str.split, try_int, extract_year),
         output_processor=TakeFirst()
     )
     pass
