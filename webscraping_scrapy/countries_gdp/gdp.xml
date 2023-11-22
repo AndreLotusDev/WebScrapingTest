@@ -1,0 +1,216 @@
+<?xml version="1.0" encoding="utf-8"?>
+<items>
+<item><country_name>United States</country_name><region>Americas</region><gdp>26,949,643</gdp><population>2023</population></item>
+<item><country_name>China</country_name><region>Asia</region><gdp>17,700,899</gdp><population>[n 1]</population></item>
+<item><country_name>Germany</country_name><region>Europe</region><gdp>4,429,838</gdp><population>2023</population></item>
+<item><country_name>Japan</country_name><region>Asia</region><gdp>4,230,862</gdp><population>2023</population></item>
+<item><country_name>India</country_name><region>Asia</region><gdp>3,732,224</gdp><population>2023</population></item>
+<item><country_name>United Kingdom</country_name><region>Europe</region><gdp>3,332,059</gdp><population>2023</population></item>
+<item><country_name>France</country_name><region>Europe</region><gdp>3,049,016</gdp><population>2023</population></item>
+<item><country_name>Italy</country_name><region>Europe</region><gdp>2,186,082</gdp><population>2023</population></item>
+<item><country_name>Brazil</country_name><region>Americas</region><gdp>2,126,809</gdp><population>2023</population></item>
+<item><country_name>Canada</country_name><region>Americas</region><gdp>2,117,805</gdp><population>2023</population></item>
+<item><country_name>Russia</country_name><region>Europe</region><gdp>1,862,470</gdp><population>2023</population></item>
+<item><country_name>Mexico</country_name><region>Americas</region><gdp>1,811,468</gdp><population>2023</population></item>
+<item><country_name>South Korea</country_name><region>Asia</region><gdp>1,709,232</gdp><population>2023</population></item>
+<item><country_name>Australia</country_name><region>Oceania</region><gdp>1,687,713</gdp><population>2023</population></item>
+<item><country_name>Spain</country_name><region>Europe</region><gdp>1,582,054</gdp><population>2023</population></item>
+<item><country_name>Indonesia</country_name><region>Asia</region><gdp>1,417,387</gdp><population>2023</population></item>
+<item><country_name>Turkey</country_name><region>Asia</region><gdp>1,154,600</gdp><population>2023</population></item>
+<item><country_name>Netherlands</country_name><region>Europe</region><gdp>1,092,748</gdp><population>2023</population></item>
+<item><country_name>Saudi Arabia</country_name><region>Asia</region><gdp>1,069,437</gdp><population>2023</population></item>
+<item><country_name>Switzerland</country_name><region>Europe</region><gdp>905,684</gdp><population>2023</population></item>
+<item><country_name>Poland</country_name><region>Europe</region><gdp>842,172</gdp><population>2023</population></item>
+<item><country_name>Taiwan</country_name><region>Asia</region><gdp>751,930</gdp><population>[n 4]</population></item>
+<item><country_name>Belgium</country_name><region>Europe</region><gdp>627,511</gdp><population>2023</population></item>
+<item><country_name>Argentina</country_name><region>Americas</region><gdp>621,833</gdp><population>2023</population></item>
+<item><country_name>Sweden</country_name><region>Europe</region><gdp>597,110</gdp><population>2023</population></item>
+<item><country_name>Ireland</country_name><region>Europe</region><gdp>589,569</gdp><population>2023</population></item>
+<item><country_name>Norway</country_name><region>Europe</region><gdp>546,768</gdp><population>2023</population></item>
+<item><country_name>Austria</country_name><region>Europe</region><gdp>526,182</gdp><population>2023</population></item>
+<item><country_name>Israel</country_name><region>Asia</region><gdp>521,688</gdp><population>2023</population></item>
+<item><country_name>Thailand</country_name><region>Asia</region><gdp>512,193</gdp><population>2023</population></item>
+<item><country_name>United Arab Emirates</country_name><region>Asia</region><gdp>509,179</gdp><population>2023</population></item>
+<item><country_name>Singapore</country_name><region>Asia</region><gdp>497,347</gdp><population>2023</population></item>
+<item><country_name>Bangladesh</country_name><region>Asia</region><gdp>446,349</gdp><population>2023</population></item>
+<item><country_name>Philippines</country_name><region>Asia</region><gdp>435,675</gdp><population>2023</population></item>
+<item><country_name>Vietnam</country_name><region>Asia</region><gdp>433,356</gdp><population>2023</population></item>
+<item><country_name>Malaysia</country_name><region>Asia</region><gdp>430,895</gdp><population>2023</population></item>
+<item><country_name>Denmark</country_name><region>Europe</region><gdp>420,800</gdp><population>2023</population></item>
+<item><country_name>Egypt</country_name><region>Africa</region><gdp>398,397</gdp><population>2023</population></item>
+<item><country_name>Nigeria</country_name><region>Africa</region><gdp>390,002</gdp><population>2023</population></item>
+<item><country_name>Hong Kong</country_name><region>Asia</region><gdp>385,546</gdp><population>[n 5]</population></item>
+<item><country_name>South Africa</country_name><region>Africa</region><gdp>380,906</gdp><population>2023</population></item>
+<item><country_name>Iran</country_name><region>Asia</region><gdp>366,438</gdp><population>2023</population></item>
+<item><country_name>Colombia</country_name><region>Americas</region><gdp>363,835</gdp><population>2023</population></item>
+<item><country_name>Romania</country_name><region>Europe</region><gdp>350,414</gdp><population>2023</population></item>
+<item><country_name>Chile</country_name><region>Americas</region><gdp>344,400</gdp><population>2023</population></item>
+<item><country_name>Pakistan</country_name><region>Asia</region><gdp>340,636</gdp><population>2023</population></item>
+<item><country_name>Czech Republic</country_name><region>Europe</region><gdp>335,243</gdp><population>2023</population></item>
+<item><country_name>Finland</country_name><region>Europe</region><gdp>305,689</gdp><population>2023</population></item>
+<item><country_name>Iraq</country_name><region>Asia</region><gdp>297,695</gdp><population>2023</population></item>
+<item><country_name>Portugal</country_name><region>Europe</region><gdp>276,432</gdp><population>2023</population></item>
+<item><country_name>Peru</country_name><region>Americas</region><gdp>264,636</gdp><population>2023</population></item>
+<item><country_name>Kazakhstan</country_name><region>Asia</region><gdp>259,292</gdp><population>2023</population></item>
+<item><country_name>New Zealand</country_name><region>Oceania</region><gdp>249,415</gdp><population>2023</population></item>
+<item><country_name>Greece</country_name><region>Europe</region><gdp>242,385</gdp><population>2023</population></item>
+<item><country_name>Qatar</country_name><region>Asia</region><gdp>235,500</gdp><population>2023</population></item>
+<item><country_name>Algeria</country_name><region>Africa</region><gdp>224,107</gdp><population>2023</population></item>
+<item><country_name>Hungary</country_name><region>Europe</region><gdp>203,829</gdp><population>2023</population></item>
+<item><country_name>Ukraine</country_name><region>Europe</region><gdp>173,413</gdp><population>[n 6]</population></item>
+<item><country_name>Kuwait</country_name><region>Asia</region><gdp>159,687</gdp><population>2023</population></item>
+<item><country_name>Ethiopia</country_name><region>Africa</region><gdp>155,804</gdp><population>2023</population></item>
+<item><country_name>Morocco</country_name><region>Africa</region><gdp>147,343</gdp><population>2023</population></item>
+<item><country_name>Slovakia</country_name><region>Europe</region><gdp>133,044</gdp><population>2023</population></item>
+<item><country_name>Cuba</country_name><region>Americas</region><gdp>—</gdp><population>107,352</population></item>
+<item><country_name>Dominican Republic</country_name><region>Americas</region><gdp>120,629</gdp><population>2023</population></item>
+<item><country_name>Ecuador</country_name><region>Americas</region><gdp>118,686</gdp><population>2023</population></item>
+<item><country_name>Puerto Rico</country_name><region>Americas</region><gdp>117,515</gdp><population>2023</population></item>
+<item><country_name>Kenya</country_name><region>Africa</region><gdp>112,749</gdp><population>2023</population></item>
+<item><country_name>Oman</country_name><region>Asia</region><gdp>108,282</gdp><population>2023</population></item>
+<item><country_name>Bulgaria</country_name><region>Europe</region><gdp>103,099</gdp><population>2023</population></item>
+<item><country_name>Guatemala</country_name><region>Americas</region><gdp>102,765</gdp><population>2023</population></item>
+<item><country_name>Angola</country_name><region>Africa</region><gdp>93,796</gdp><population>2023</population></item>
+<item><country_name>Venezuela</country_name><region>Americas</region><gdp>92,210</gdp><population>2023</population></item>
+<item><country_name>Uzbekistan</country_name><region>Asia</region><gdp>90,392</gdp><population>2023</population></item>
+<item><country_name>Luxembourg</country_name><region>Europe</region><gdp>89,095</gdp><population>2023</population></item>
+<item><country_name>Costa Rica</country_name><region>Americas</region><gdp>85,590</gdp><population>2023</population></item>
+<item><country_name>Tanzania</country_name><region>Africa</region><gdp>84,033</gdp><population>2023</population></item>
+<item><country_name>Panama</country_name><region>Americas</region><gdp>82,348</gdp><population>2023</population></item>
+<item><country_name>Turkmenistan</country_name><region>Asia</region><gdp>81,822</gdp><population>2023</population></item>
+<item><country_name>Croatia</country_name><region>Europe</region><gdp>80,185</gdp><population>2023</population></item>
+<item><country_name>Ivory Coast</country_name><region>Africa</region><gdp>79,430</gdp><population>2023</population></item>
+<item><country_name>Lithuania</country_name><region>Europe</region><gdp>79,427</gdp><population>2023</population></item>
+<item><country_name>Azerbaijan</country_name><region>Asia</region><gdp>77,392</gdp><population>2023</population></item>
+<item><country_name>Ghana</country_name><region>Africa</region><gdp>76,628</gdp><population>2023</population></item>
+<item><country_name>Uruguay</country_name><region>Americas</region><gdp>76,244</gdp><population>2023</population></item>
+<item><country_name>Serbia</country_name><region>Europe</region><gdp>75,015</gdp><population>2023</population></item>
+<item><country_name>Myanmar</country_name><region>Asia</region><gdp>74,861</gdp><population>2023</population></item>
+<item><country_name>Sri Lanka</country_name><region>Asia</region><gdp>—</gdp><population>74,404</population></item>
+<item><country_name>Belarus</country_name><region>Europe</region><gdp>68,864</gdp><population>2023</population></item>
+<item><country_name>Slovenia</country_name><region>Europe</region><gdp>68,394</gdp><population>2023</population></item>
+<item><country_name>DR Congo</country_name><region>Africa</region><gdp>67,512</gdp><population>2023</population></item>
+<item><country_name>Uganda</country_name><region>Africa</region><gdp>52,390</gdp><population>2023</population></item>
+<item><country_name>Tunisia</country_name><region>Africa</region><gdp>51,271</gdp><population>2023</population></item>
+<item><country_name>Jordan</country_name><region>Asia</region><gdp>50,022</gdp><population>2023</population></item>
+<item><country_name>Cameroon</country_name><region>Africa</region><gdp>49,262</gdp><population>2023</population></item>
+<item><country_name>Bolivia</country_name><region>Americas</region><gdp>46,796</gdp><population>2023</population></item>
+<item><country_name>Latvia</country_name><region>Europe</region><gdp>46,668</gdp><population>2023</population></item>
+<item><country_name>Bahrain</country_name><region>Asia</region><gdp>44,994</gdp><population>2023</population></item>
+<item><country_name>Paraguay</country_name><region>Americas</region><gdp>44,142</gdp><population>2023</population></item>
+<item><country_name>Estonia</country_name><region>Europe</region><gdp>41,799</gdp><population>2023</population></item>
+<item><country_name>Nepal</country_name><region>Asia</region><gdp>41,339</gdp><population>2023</population></item>
+<item><country_name>Libya</country_name><region>Africa</region><gdp>40,194</gdp><population>2023</population></item>
+<item><country_name>Macau</country_name><region>Asia</region><gdp>38,480</gdp><population>[n 9]</population></item>
+<item><country_name>Lebanon</country_name><region>Asia</region><gdp>—</gdp><population>—</population></item>
+<item><country_name>El Salvador</country_name><region>Americas</region><gdp>35,339</gdp><population>2023</population></item>
+<item><country_name>Honduras</country_name><region>Americas</region><gdp>33,992</gdp><population>2023</population></item>
+<item><country_name>Zimbabwe</country_name><region>Africa</region><gdp>32,424</gdp><population>2023</population></item>
+<item><country_name>Cyprus</country_name><region>Asia</region><gdp>32,032</gdp><population>[n 10]</population></item>
+<item><country_name>Papua New Guinea</country_name><region>Oceania</region><gdp>31,692</gdp><population>2023</population></item>
+<item><country_name>Senegal</country_name><region>Africa</region><gdp>31,141</gdp><population>2023</population></item>
+<item><country_name>Cambodia</country_name><region>Asia</region><gdp>30,943</gdp><population>2023</population></item>
+<item><country_name>Iceland</country_name><region>Europe</region><gdp>30,570</gdp><population>2023</population></item>
+<item><country_name>Georgia</country_name><region>Asia</region><gdp>30,023</gdp><population>[n 11]</population></item>
+<item><country_name>Zambia</country_name><region>Africa</region><gdp>29,536</gdp><population>2023</population></item>
+<item><country_name>Trinidad and Tobago</country_name><region>Americas</region><gdp>27,887</gdp><population>2023</population></item>
+<item><country_name>Bosnia and Herzegovina</country_name><region>Europe</region><gdp>26,945</gdp><population>2023</population></item>
+<item><country_name>Haiti</country_name><region>Americas</region><gdp>25,986</gdp><population>2023</population></item>
+<item><country_name>Sudan</country_name><region>Africa</region><gdp>25,569</gdp><population>2023</population></item>
+<item><country_name>Armenia</country_name><region>Asia</region><gdp>24,540</gdp><population>2023</population></item>
+<item><country_name>Guinea</country_name><region>Africa</region><gdp>23,205</gdp><population>2023</population></item>
+<item><country_name>Albania</country_name><region>Europe</region><gdp>23,032</gdp><population>2023</population></item>
+<item><country_name>Mozambique</country_name><region>Africa</region><gdp>21,936</gdp><population>2023</population></item>
+<item><country_name>Mali</country_name><region>Africa</region><gdp>21,309</gdp><population>2023</population></item>
+<item><country_name>Yemen</country_name><region>Asia</region><gdp>21,045</gdp><population>2023</population></item>
+<item><country_name>Burkina Faso</country_name><region>Africa</region><gdp>20,785</gdp><population>2023</population></item>
+<item><country_name>Botswana</country_name><region>Africa</region><gdp>20,756</gdp><population>2023</population></item>
+<item><country_name>Malta</country_name><region>Europe</region><gdp>20,311</gdp><population>2023</population></item>
+<item><country_name>Benin</country_name><region>Africa</region><gdp>19,940</gdp><population>2023</population></item>
+<item><country_name>Syria</country_name><region>Asia</region><gdp>—</gdp><population>—</population></item>
+<item><country_name>Gabon</country_name><region>Africa</region><gdp>19,319</gdp><population>2023</population></item>
+<item><country_name>Palestine</country_name><region>Asia</region><gdp>18,109</gdp><population>[n 12]</population></item>
+<item><country_name>Mongolia</country_name><region>Asia</region><gdp>18,782</gdp><population>2023</population></item>
+<item><country_name>Jamaica</country_name><region>Americas</region><gdp>18,761</gdp><population>2023</population></item>
+<item><country_name>Nicaragua</country_name><region>Americas</region><gdp>17,353</gdp><population>2023</population></item>
+<item><country_name>Niger</country_name><region>Africa</region><gdp>17,073</gdp><population>2023</population></item>
+<item><country_name>North Korea</country_name><region>Asia</region><gdp>—</gdp><population>—</population></item>
+<item><country_name>Guyana</country_name><region>Americas</region><gdp>16,329</gdp><population>2023</population></item>
+<item><country_name>Moldova</country_name><region>Europe</region><gdp>16,000</gdp><population>[n 14]</population></item>
+<item><country_name>North Macedonia</country_name><region>Europe</region><gdp>15,801</gdp><population>2023</population></item>
+<item><country_name>Madagascar</country_name><region>Africa</region><gdp>15,763</gdp><population>2023</population></item>
+<item><country_name>Brunei</country_name><region>Asia</region><gdp>15,153</gdp><population>2023</population></item>
+<item><country_name>Afghanistan</country_name><region>Asia</region><gdp>—</gdp><population>—</population></item>
+<item><country_name>Mauritius</country_name><region>Africa</region><gdp>14,819</gdp><population>2023</population></item>
+<item><country_name>Congo</country_name><region>Africa</region><gdp>14,407</gdp><population>2023</population></item>
+<item><country_name>Laos</country_name><region>Asia</region><gdp>14,244</gdp><population>2023</population></item>
+<item><country_name>Rwanda</country_name><region>Africa</region><gdp>13,927</gdp><population>2023</population></item>
+<item><country_name>Bahamas</country_name><region>Americas</region><gdp>13,876</gdp><population>2023</population></item>
+<item><country_name>Malawi</country_name><region>Africa</region><gdp>13,176</gdp><population>2023</population></item>
+<item><country_name>Kyrgyzstan</country_name><region>Asia</region><gdp>12,681</gdp><population>2023</population></item>
+<item><country_name>Namibia</country_name><region>Africa</region><gdp>12,647</gdp><population>2023</population></item>
+<item><country_name>Chad</country_name><region>Africa</region><gdp>12,596</gdp><population>2023</population></item>
+<item><country_name>Tajikistan</country_name><region>Asia</region><gdp>11,816</gdp><population>2023</population></item>
+<item><country_name>Somalia</country_name><region>Africa</region><gdp>11,515</gdp><population>2023</population></item>
+<item><country_name>Kosovo</country_name><region>Europe</region><gdp>10,469</gdp><population>2023</population></item>
+<item><country_name>Mauritania</country_name><region>Africa</region><gdp>10,357</gdp><population>2023</population></item>
+<item><country_name>New Caledonia</country_name><region>Oceania</region><gdp>—</gdp><population>—</population></item>
+<item><country_name>Equatorial Guinea</country_name><region>Africa</region><gdp>10,041</gdp><population>2023</population></item>
+<item><country_name>Togo</country_name><region>Africa</region><gdp>9,111</gdp><population>2023</population></item>
+<item><country_name>Monaco</country_name><region>Europe</region><gdp>—</gdp><population>—</population></item>
+<item><country_name>Bermuda</country_name><region>Americas</region><gdp>—</gdp><population>7,551</population></item>
+<item><country_name>Montenegro</country_name><region>Europe</region><gdp>7,058</gdp><population>2023</population></item>
+<item><country_name>Maldives</country_name><region>Asia</region><gdp>6,977</gdp><population>2023</population></item>
+<item><country_name>Liechtenstein</country_name><region>Europe</region><gdp>—</gdp><population>—</population></item>
+<item><country_name>South Sudan</country_name><region>Africa</region><gdp>6,267</gdp><population>2023</population></item>
+<item><country_name>Barbados</country_name><region>Americas</region><gdp>6,220</gdp><population>2023</population></item>
+<item><country_name>French Polynesia</country_name><region>Oceania</region><gdp>—</gdp><population>—</population></item>
+<item><country_name>Cayman Islands</country_name><region>Americas</region><gdp>—</gdp><population>—</population></item>
+<item><country_name>Fiji</country_name><region>Oceania</region><gdp>5,511</gdp><population>2023</population></item>
+<item><country_name>Eswatini</country_name><region>Africa</region><gdp>4,648</gdp><population>2023</population></item>
+<item><country_name>Liberia</country_name><region>Africa</region><gdp>4,347</gdp><population>2023</population></item>
+<item><country_name>Djibouti</country_name><region>Africa</region><gdp>3,873</gdp><population>2023</population></item>
+<item><country_name>Aruba</country_name><region>Americas</region><gdp>3,827</gdp><population>2023</population></item>
+<item><country_name>Andorra</country_name><region>Europe</region><gdp>3,692</gdp><population>2023</population></item>
+<item><country_name>Suriname</country_name><region>Americas</region><gdp>3,539</gdp><population>2023</population></item>
+<item><country_name>Sierra Leone</country_name><region>Africa</region><gdp>3,519</gdp><population>2023</population></item>
+<item><country_name>Greenland</country_name><region>Americas</region><gdp>—</gdp><population>—</population></item>
+<item><country_name>Belize</country_name><region>Americas</region><gdp>3,218</gdp><population>2023</population></item>
+<item><country_name>Burundi</country_name><region>Africa</region><gdp>3,190</gdp><population>2023</population></item>
+<item><country_name>Central African Republic</country_name><region>Africa</region><gdp>2,760</gdp><population>2023</population></item>
+<item><country_name>Curaçao</country_name><region>Americas</region><gdp>—</gdp><population>—</population></item>
+<item><country_name>Bhutan</country_name><region>Asia</region><gdp>2,686</gdp><population>2023</population></item>
+<item><country_name>Cape Verde</country_name><region>Africa</region><gdp>2,598</gdp><population>2023</population></item>
+<item><country_name>Saint Lucia</country_name><region>Americas</region><gdp>2,469</gdp><population>2023</population></item>
+<item><country_name>Gambia</country_name><region>Africa</region><gdp>2,388</gdp><population>2023</population></item>
+<item><country_name>Lesotho</country_name><region>Africa</region><gdp>2,373</gdp><population>2023</population></item>
+<item><country_name>Eritrea</country_name><region>Africa</region><gdp>—</gdp><population>—</population></item>
+<item><country_name>Seychelles</country_name><region>Africa</region><gdp>2,085</gdp><population>2023</population></item>
+<item><country_name>Zanzibar</country_name><region>Africa</region><gdp>—</gdp><population>—</population></item>
+<item><country_name>East Timor</country_name><region>Asia</region><gdp>2,023</gdp><population>2023</population></item>
+<item><country_name>San Marino</country_name><region>Europe</region><gdp>1,998</gdp><population>2023</population></item>
+<item><country_name>Guinea-Bissau</country_name><region>Africa</region><gdp>1,991</gdp><population>2023</population></item>
+<item><country_name>Antigua and Barbuda</country_name><region>Americas</region><gdp>1,949</gdp><population>2023</population></item>
+<item><country_name>Solomon Islands</country_name><region>Oceania</region><gdp>1,690</gdp><population>2023</population></item>
+<item><country_name>Sint Maarten</country_name><region>Americas</region><gdp>—</gdp><population>1,572</population></item>
+<item><country_name>British Virgin Islands</country_name><region>Americas</region><gdp>—</gdp><population>—</population></item>
+<item><country_name>Comoros</country_name><region>Africa</region><gdp>1,364</gdp><population>2023</population></item>
+<item><country_name>Grenada</country_name><region>Americas</region><gdp>1,306</gdp><population>2023</population></item>
+<item><country_name>Vanuatu</country_name><region>Oceania</region><gdp>1,166</gdp><population>2023</population></item>
+<item><country_name>Turks and Caicos Islands</country_name><region>Americas</region><gdp>—</gdp><population>1,139</population></item>
+<item><country_name>Saint Kitts and Nevis</country_name><region>Americas</region><gdp>1,069</gdp><population>2023</population></item>
+<item><country_name>Saint Vincent and the Grenadines</country_name><region>Americas</region><gdp>1,039</gdp><population>2023</population></item>
+<item><country_name>Samoa</country_name><region>Oceania</region><gdp>939</gdp><population>2023</population></item>
+<item><country_name>Dominica</country_name><region>Americas</region><gdp>697</gdp><population>2023</population></item>
+<item><country_name>São Tomé and Príncipe</country_name><region>Africa</region><gdp>674</gdp><population>2023</population></item>
+<item><country_name>Tonga</country_name><region>Oceania</region><gdp>547</gdp><population>2023</population></item>
+<item><country_name>Micronesia</country_name><region>Oceania</region><gdp>458</gdp><population>2023</population></item>
+<item><country_name>Cook Islands</country_name><region>Oceania</region><gdp>—</gdp><population>—</population></item>
+<item><country_name>Anguilla</country_name><region>Americas</region><gdp>—</gdp><population>—</population></item>
+<item><country_name>Marshall Islands</country_name><region>Oceania</region><gdp>277</gdp><population>2023</population></item>
+<item><country_name>Palau</country_name><region>Oceania</region><gdp>267</gdp><population>2023</population></item>
+<item><country_name>Kiribati</country_name><region>Oceania</region><gdp>246</gdp><population>2023</population></item>
+<item><country_name>Nauru</country_name><region>Oceania</region><gdp>150</gdp><population>2023</population></item>
+<item><country_name>Montserrat</country_name><region>Americas</region><gdp>—</gdp><population>—</population></item>
+<item><country_name>Tuvalu</country_name><region>Oceania</region><gdp>63</gdp><population>2023</population></item>
+</items>

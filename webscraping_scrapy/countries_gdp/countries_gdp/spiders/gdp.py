@@ -8,7 +8,7 @@ class GdpSpider(scrapy.Spider):
 
     def parse(self, response):
         # print each row of tr table in wikipedia, using css selector function
-        for country in response.css("table.wikitable.sortable tbody tr"):
+        for country in response.css("table.wikitable.sortable tbody tr:not([class])"):
 
             yield {
                 "country_name": country.css("td:nth-child(1) a::text").get(),
