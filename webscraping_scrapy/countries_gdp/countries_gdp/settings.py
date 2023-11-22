@@ -63,7 +63,8 @@ ROBOTSTXT_OBEY = True
 # Configure item pipelines
 # See https://docs.scrapy.org/en/latest/topics/item-pipeline.html
 ITEM_PIPELINES = {
-   "countries_gdp.pipelines.CountriesGdpPipeline": 300,
+   "countries_gdp.pipelines.CountriesGdpPipeline": 1,
+   "countries_gdp.pipelines.SaveToDatabasePipeline": 2
 }
 
 # Enable and configure the AutoThrottle extension (disabled by default)
