@@ -27,7 +27,7 @@ class SaveToDatabasePipeline:
     def process_item(self, item, spider):
         print(item)
         self.cur.execute(
-            """INSERT INTO countries_gdp (country_name, region, gdp, year) VALUES(?, ?, ?, ?)""",
+            """INSERT OR IGNORE INTO countries_gdp (country_name, region, gdp, year) VALUES(?, ?, ?, ?)""",
 (
                 item["country_name"],
                 item["region"],
@@ -40,3 +40,14 @@ class SaveToDatabasePipeline:
 
     def close_spider(self, spider):
         self.con.close()
+
+class NoDuplicateCountryPipeline:
+    def __init__(self):
+        self.country_seen = set()
+
+    def process_item(self, item, spider):
+        if item["country_name"] in self.country_seen:
+            raise DropItem("Duplicate country found: %s" % item)
+        else:
+            self.country_seen.add(item["country_name"])
+            return item
