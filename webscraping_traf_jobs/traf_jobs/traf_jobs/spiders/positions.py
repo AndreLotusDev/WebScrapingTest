@@ -1,41 +1,56 @@
 from typing import Iterable
-
 import scrapy
 from scrapy import Request
+from scrapy.http import HtmlResponse
+from scrapy.selector import Selector
+from scrapy_playwright.page import PageMethod
 
 
 class PositionsSpider(scrapy.Spider):
     name = "positions"
-    allowed_domains = ["traf.com"]
+    allowed_domains = ["trafigura.wd3.myworkdayjobs.com"]
     start_urls = ["https://trafigura.wd3.myworkdayjobs.com/TrafiguraCareerSite"]
 
-    def start_requests(self):
+    def start_requests(self) -> Iterable[Request]:
         yield scrapy.Request(
             self.start_urls[0],
-            meta={
-                'playwright': True,
-                'playwright_include_page': True,
-                'playwright_page_methods': [
-                    ('wait_for_timeout', '5000'),
+            meta=dict(
+                playwright=True,
+                playwright_include_page=True,
+                playwright_page_methods=[
+                    PageMethod("wait_for_load_state", state="networkidle"),
+                    PageMethod("wait_for_selector", "ul[role='list']"),
+                    PageMethod("wait_for_timeout", timeout=3 * 1000),
+                    PageMethod("evaluate", "window.scrollBy(0, document.body.scrollHeight)"),
+                    PageMethod("wait_for_selector", ".css-1xuojeq"),
+
                 ]
-            }
+            )
         )
 
-    def parse(self, response):
-        job_results_section = response.css('section[data-automation-id="jobResults"]')
-        print(response.body)
-        print(job_results_section)
+    async def parse(self, response: HtmlResponse):
+        page = response.meta["playwright_page"]
 
-        jobs_list = job_results_section.xpath('.//ul[@aria-label="Page 1 of 5"]')
-        print(jobs_list)
+        while True:
+            await page.wait_for_load_state(state="networkidle")
+            await page.wait_for_selector("ul[role='list']")
+            content = await page.content()
+            selector = Selector(text=content)
 
-        for job in jobs_list.xpath('./li'):
-            yield {
-                'title': job.xpath('.//a[@data-automation-id="jobTitle"]/text()').get(),
-                'location': self.extract_with_label(job, 'locations'),
-                'posted': self.extract_with_label(job, 'posted on'),
-            }
+            for job in selector.css("ul[role='list'] li"):
+                item = {
+                    "title": job.css("div div div h3 a[data-automation-id='jobTitle']::text").get()
+                }
+                yield item
 
-            def extract_with_label(self, job, label):
-                return job.xpath(f'.//dt[normalize-space(text())="{label}"]/following-sibling::dd[1]/text()').get()
+            next_page_available = await page.evaluate(
+                "() => Boolean(document.querySelector('svg.wd-icon-chevron-right-small.wd-icon:not([disabled])'))"
+            )
 
+            if next_page_available:
+                await page.click("button[aria-label='Next']")  # assuming 'Next' is the aria-label for the next page button
+                await page.wait_for_event("response")
+            else:
+                break
+
+        await page.close()
