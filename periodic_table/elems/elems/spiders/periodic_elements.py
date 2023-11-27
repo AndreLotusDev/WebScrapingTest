@@ -4,6 +4,7 @@ import scrapy
 from scrapy import Request
 from elems.items import PeriodicElementItem
 from scrapy.loader import ItemLoader
+from scrapy_playwright.page import PageMethod
 
 
 class PeriodicElementsSpider(scrapy.Spider):
@@ -14,7 +15,10 @@ class PeriodicElementsSpider(scrapy.Spider):
         yield scrapy.Request(
             'https://pubchem.ncbi.nlm.nih.gov/ptable',
             meta=dict(
-                playwright=True
+                playwright=True,
+                playwright_page_methods=[
+                    PageMethod('wait_for_selector', 'div.ptable')
+                ]
             )
         )
 
