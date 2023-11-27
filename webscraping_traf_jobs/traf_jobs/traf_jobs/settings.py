@@ -12,6 +12,12 @@ BOT_NAME = "traf_jobs"
 SPIDER_MODULES = ["traf_jobs.spiders"]
 NEWSPIDER_MODULE = "traf_jobs.spiders"
 
+DOWNLOAD_HANDLERS = {
+    "http": "scrapy_playwright.handler.ScrapyPlaywrightDownloadHandler",
+    "https": "scrapy_playwright.handler.ScrapyPlaywrightDownloadHandler",
+}
+
+TWISTED_REACTOR = "twisted.internet.asyncioreactor.AsyncioSelectorReactor"
 
 # Crawl responsibly by identifying yourself (and your website) on the user-agent
 #USER_AGENT = "traf_jobs (+http://www.yourdomain.com)"
