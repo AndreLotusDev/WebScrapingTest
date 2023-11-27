@@ -28,13 +28,13 @@ class PositionsSpider(scrapy.Spider):
             )
         )
 
-    async def parse(self, response: HtmlResponse):
+    def parse(self, response: HtmlResponse):
         page = response.meta["playwright_page"]
 
         while True:
-            await page.wait_for_load_state(state="networkidle")
-            await page.wait_for_selector("ul[role='list']")
-            content = await page.content()
+            page.wait_for_load_state(state="networkidle")
+            page.wait_for_selector("ul[role='list']")
+            content = page.content()
             selector = Selector(text=content)
 
             for job in selector.css("ul[role='list'] li"):
@@ -43,14 +43,14 @@ class PositionsSpider(scrapy.Spider):
                 }
                 yield item
 
-            next_page_available = await page.evaluate(
+            next_page_available = page.evaluate(
                 "() => Boolean(document.querySelector('svg.wd-icon-chevron-right-small.wd-icon:not([disabled])'))"
             )
 
             if next_page_available:
-                await page.click("button[aria-label='Next']")  # assuming 'Next' is the aria-label for the next page button
-                await page.wait_for_event("response")
+                page.click("button[aria-label='Next']")  # assuming 'Next' is the aria-label for the next page button
+                page.wait_for_event("response")
             else:
                 break
 
-        await page.close()
+        page.close()
