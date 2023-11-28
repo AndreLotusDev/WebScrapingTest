@@ -1,0 +1,8 @@
+pip install scrapy
+scrapy bench
+scrapy shell --enter in iterative mode
+scrpay shell https://quotes.toscrape.com/
+
+/head/body/div //Access one by one
+//div[@class='row']//div[@class='quote'] //Access directlty the childs of the div
+//div[@class='row']//div[@class='quote']//span[1] //Access directlty the childs of the div and then get the first span
