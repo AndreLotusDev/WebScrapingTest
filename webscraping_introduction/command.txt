@@ -1,7 +1,11 @@
 pip install scrapy
 scrapy bench
 scrapy shell --enter in iterative mode
-scrpay shell https://quotes.toscrape.com/
+scrapy shell https://quotes.toscrape.com/
+scrapy crawl name_spider -o name_file.format
+scrap runspider name_spider.py -o name_file.format
+
+result = fetch('https://quotes.toscrape.com/page/2/') //req using fetch
 
 /head/body/div //Access one by one
 //div[@class='row']//div[@class='quote'] //Access directlty the childs of the div
